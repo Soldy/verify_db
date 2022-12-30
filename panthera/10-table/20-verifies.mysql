@@ -1,0 +1,10 @@
+CREATE TABLE `notes` (
+    `id` SERIAL,
+    `name` VARCHAR(128) NOT NULL,
+    `verify` VARCHAR(512) NOT NULL,
+    `salt_middle` VARCHAR(512) NOT NULL,
+    `salt_after` VARCHAR(512) NOT NULL,
+    `salt_sanitizer` VARCHAR(512),
+    `created_at` BIGINT UNSIGNED NOT NULL,
+     KEY `index` (`id`)
+)  ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;;
